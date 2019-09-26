@@ -1,0 +1,102 @@
+@import url('fonts/thsarabunnew.css');
+
+ html{height : 100%;}
+         ::-moz-selection{
+            background : #fe57a1;
+            color : #fff;
+            text-shadow : none;
+         }
+         ::selection{
+            background : #fe57a1;
+            color : #fff;
+            text-shadow : none;
+         }
+body{
+	font-family: 'THSarabunNew', sans-serif;
+	width:100%;
+	min-height:100%; 
+	position: absolute;
+	background: linear-gradient(#1A76BE,cornflowerblue);
+}
+body{
+	background: cornflowerblue;
+	background-image: url('https://www.picz.in.th/images/2018/08/28/fhNFmE.th.png'),url('https://www.picz.in.th/images/2018/08/28/fhNV3u.png'), url('https://www.picz.in.th/images/2018/08/28/fhNv4P.png');
+	animation: snow 30s linear infinite;
+}
+@keyframes snow {
+   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+   100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+h1{
+	font-family: "THSarabunNew", sans-serif;
+}
+         .centered{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+         }
+         .login{
+            background : #eceeee;
+            border : 1px solid #42464b;
+            border-radius : 6px;
+            height : 257px;
+            margin : 20px auto 0;
+		text-align:center;
+            width : 298px;
+         }
+         input[type="text"], input[type="password"]{
+            background : center left no-repeat, linear-gradient(top, #d6d7d7, #dee0e0);
+            border : 1px solid #a1a3a3;
+            border-radius : 3em;
+            box-shadow : 0 1px #fff;
+            box-sizing : border-box;
+            color : #696969;
+            height : 39px;
+            margin-top : 15px;
+            transition : box-shadow 0.3s;
+            width : 240px;
+            text-align: center;
+         }
+
+         input[type="text"]:focus, input[type="password"]:focus {
+            box-shadow : 0 0 4px 1px rgba(55, 166, 155, 0.3);
+            outline : 0;
+         }
+
+         input[type="submit"], button  {
+            width : 240px;
+            height : 35px;
+            display : block;
+            font-family : "THSarabunNew", sans-serif;
+            font-weight : bold;
+		font-size: 1.2em;
+            color : #fff;
+            text-decoration : none;
+            text-align : center;
+            text-shadow : -2px 2px 1px #111;
+            padding-top : 6px;
+            margin : 15px 0 0 29px;
+            position : relative;
+            cursor : pointer;
+            border : none;
+            background-color : dodgerblue;
+            background-image : linear-gradient(top,#3db0a6,#3111);
+            border-radius : .325em;
+            box-shadow : inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+         }
+         .shadow{
+            position: absolute;
+            background : #000;
+            border-radius : 12px 12px 4px 4px;
+            box-shadow : 0 0 20px 10px #000;
+            height : 12px;
+            margin : 30px auto;
+            opacity : 0.2;
+            width : 100%;
+         }
+         input[type="submit"]:active, button:active{
+            top : 3px;
+            box-shadow : inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999;
+         }

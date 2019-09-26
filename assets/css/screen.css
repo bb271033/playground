@@ -1,0 +1,13 @@
+@media screen and (max-width: 450px){
+    .centered, .box {
+        min-width : 100%;
+    }
+    .bar {
+        display: none;
+    }
+    #nisa {
+        display: block;
+        line-height: 50px;
+        font-size: 32px;
+    }
+}

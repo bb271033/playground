@@ -1,0 +1,23 @@
+<div class="w3-container w3-pale-blue w3-round" style="width:100%;max-width:400px;margin:auto;">
+    
+	<form method="post" action="action.php?action=add" enctype="multipart/form-data" autocomplete="off">
+		<p>วัน / เดือน / ปี <input data-toggle="datepicker" name="day" type="text" id="txtday" class="w3-input w3-round" /> </p>
+		<p>โน๊ต	<input name="details" type="text" id="details" class="w3-input" /> </p>
+		<div class="w3-row">
+			<div class="w3-col s2 m2">
+				<select name="trans" id="trans" class="w3-teal w3-round">
+					<option value="ยืม" selected>ยืม </option>
+					<option value="คืน"> คืน</option>
+				</select>
+			</div>
+			<div class="w3-col s10 m10 w3-right">
+				<input name="amount" type="text" id="amount" placeholder="จำนวน" required onkeyup="if(this.value*1 !=this.value){alert('กรอกเฉพาะตัวเลข'); this.value='';}" class="w3-input" />
+			</div>
+		</div>
+        <div class="w3-row bar">
+            <input name="picture" type="file" id="picture" />
+            <input type="submit" class="w3-button w3-teal w3-round w3-right" value="Add" />
+        </div>
+    </form>
+   
+</div>

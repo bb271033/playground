@@ -1,0 +1,12 @@
+@font-face {
+	font-family : 'AngsanaNew';
+	src : url('AngsanaNew.eot?#iefix') format('embedded-opentype'),  
+url('AngsanaNew.woff') format('woff'), 
+url('AngsanaNew.ttf') format('truetype'), 
+url('AngsanaNew.svg#AngsanaNew') format('svg');
+	font-weight : normal;
+	font-style : normal;
+}
+.angsananew {
+	font-family: AngsanaNew, sans-serif;
+}
