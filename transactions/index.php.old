@@ -39,18 +39,18 @@ if(file_exists($dir)){
 	include($dir);
                     $database = new Database();
                     $conn = $database->getConnection();
-                    $sql = "SELECT a.id, a.day, a.detail, b.mb_type, a.amount, b.mb_typeid, a.path FROM mb_transaction a, mb_type b WHERE a.mb_typeid=b.mb_typeid ORDER BY a.day;";
+                    $sql = "SELECT a.id, a.day, a.details, b.diary_transaction_name, a.amount, a.path FROM diary a, diary_transaction b WHERE a.diary_transaction_id=b.diary_transaction_id ORDER BY a.day;";
                     $query = $conn->query($sql);
                     while($row = $query->fetch_object()){
 $id = $row->id;
 $day = strtotime($row->day);
 $dated = thaidate('j M y', $day);
-$detail = $row->detail;
-$tran = $row->mb_type;
-if($row->mb_typeid === "TN"){
+$detail = $row->details;
+$tran = $row->diary_transaction_name;
+if($tran === "ยืม"){
 	$color_text = "red";
 }
-else if($row->mb_typeid === "TW") $color_text = "blue";
+else if($tran === "คืน") $color_text = "blue";
 
 $amount = number_format(abs($row->amount));
                         echo '<li>';
